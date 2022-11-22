@@ -88,9 +88,33 @@ function deleteAllChlid() {
 function settingsBtn() {
     let configs_tasks = document.querySelector('#show_Settings');
     configs_tasks.style.marginTop = "0";
+    configs_tasks.style.display = "flex";
 };
 
 function hidden_settings() {
     let configs_tasks = document.querySelector('#show_Settings');
     configs_tasks.style.marginTop = "-100%";
+    configs_tasks.style.display = "flex";
 };
+
+// --- * --- Function Options Settings --- * ---
+document.querySelector('#ch1').addEventListener('click', () => {
+    let body = document.querySelector("body");
+    if(body.style.backgroundColor === "#fefefe") {
+        body.style.backgroundColor = "#000";
+    } else {
+        body.style.backgroundColor = "#fefefe"
+    };
+});
+
+document.querySelector('#ch2').addEventListener('click', () => {
+    console.log('Hello');
+});
+
+document.querySelector('#ch3').addEventListener('click', () => {
+    console.log('Hello');
+});
+
+document.querySelector('#ch4').addEventListener('click', () => {
+    console.log('Hello');
+});

@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background: rgb(34, 32, 32);
+    background-color: rgb(34, 32, 32);
 }
 
 .container {
@@ -243,7 +243,8 @@ body {
 
     display: flex;
 
-    margin-top: -100%;
+    margin-top: -200%;
+    display: none;
     transition: .3s;
 
     align-items: center;
